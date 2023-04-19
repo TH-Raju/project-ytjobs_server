@@ -24,12 +24,9 @@ module.exports.postJob = async (req, res) => {
 }
 
 // module.exports.searchJob = async (req, res) => {
-//     try {
-//         const regex = new RegExp(req.params.query, 'i');
-//         const jobs = await jobCollection.find({ $or: [{ title: regex }, { location: regex }] });
-//         res.send(jobs);
-//     } catch (err) {
-//         console.error(err.message);
-//         res.status(500).send('Server Error');
-//     }
+//     const search = req.params.id;
+//     const jobs = await jobCollection.find({ $or: [{ title: search }, { location: search }] });
+//     res.json(jobs)
+//     res.send(jobs)
 // }
+
